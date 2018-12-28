@@ -51,7 +51,7 @@ Vertical Timeline - by CodyHouse.co
 -------------------------------- */
 header {
   height: 200px;
-  line-height: 200px;
+  line-height: 100px;
   text-align: center;
   background: #303e49;
 }
@@ -80,8 +80,10 @@ header h1 {
   position: relative;
   width: 90%;
   max-width: 1170px;
-  margin: 0 auto;
-  padding: 2em 0;
+  /* margin: 2em 0; */
+  margin: auto;
+  padding: 1em 0;
+  margin-top: 2em;
 }
 
 .cd-timeline__container::before {
@@ -154,15 +156,20 @@ header h1 {
   margin-top: -12px;
 }
 
-.cd-timeline__img.cd-timeline__img--picture {
+
+.cd-timeline__img.cd-timeline__img--blue {
+  background: #66a3ff;
+}
+
+.cd-timeline__img.cd-timeline__img--picture, .cd-timeline__img.cd-timeline__img--green {
   background: #75ce66;
 }
 
-.cd-timeline__img.cd-timeline__img--movie {
+.cd-timeline__img.cd-timeline__img--movie, .cd-timeline__img.cd-timeline__img--red {
   background: #c03b44;
 }
 
-.cd-timeline__img.cd-timeline__img--location {
+.cd-timeline__img.cd-timeline__img--location, .cd-timeline__img.cd-timeline__img--yellow{
   background: #f0ca45;
 }
 
@@ -282,6 +289,9 @@ header h1 {
   float: left;
   padding: 0.5em 0;
   opacity: .7;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -300,7 +310,7 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   .cd-timeline__content {
     margin-left: 0;
-    padding: 0.9em;
+    padding: 0.8em;
     width: 45%;
     /* Force Hardware Acceleration */
     -webkit-transform: translateZ(0);
@@ -421,4 +431,58 @@ header h1 {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.webmadewell {
+  background-color: white;
+}
+body {
+  margin: 0;
+}
+.sample-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sample-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: MidnightBlue;
+  opacity: 0.3;
+}
+.sample-header-section {
+  position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 400;
+}
+.sample-section-wrap {
+  position: relative;
+  background-color: white;
+}
+.sample-section {
+  position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
 }
