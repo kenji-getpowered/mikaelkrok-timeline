@@ -298,7 +298,8 @@ header h1 {
 
 @media only screen and (min-width: 768px) {
   .cd-timeline__content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
   }
   .cd-timeline__content p {
     font-size: 1.6rem;
